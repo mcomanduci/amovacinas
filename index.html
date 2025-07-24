@@ -54,7 +54,9 @@
   </head>
   <body class="bg-gray-50 text-gray-700">
     <!-- CABEÇALHO -->
-    <header class="bg-white/80 backdrop-blur-lg shadow-sm fixed w-full top-0 z-50">
+    <header
+      class="bg-white/80 backdrop-blur-lg shadow-sm fixed w-full top-0 z-50"
+    >
       <div
         class="container mx-auto px-6 py-3 flex justify-between items-center"
       >
@@ -154,13 +156,15 @@
 
     <main>
       <!-- SEÇÃO HERO -->
-      <section class="relative pt-20 pb-24 sm:pt-[14rem] sm:pb-48 overflow-hidden">
+      <section
+        class="relative pt-20 pb-24 sm:pt-[14rem] sm:pb-48 overflow-hidden"
+      >
         <div class="absolute inset-0 bg-violet-50"></div>
         <div class="absolute inset-0 bg-sky-200"></div>
 
         <div
           class="absolute inset-0 block bg-no-repeat bg-[75%] bg-cover opacity-60 2xl:opacity-100"
-          style="background-image: url('./img/bg2.png');"
+          style="background-image: url('./img/bg2.png')"
         ></div>
 
         <div class="container mx-auto px-6 text-left relative">
@@ -189,212 +193,6 @@
       <!-- <div class="bg-violet-50">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L80,144C160,160,320,192,480,186.7C640,181,800,139,960,133.3C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
         </div> -->
-
-      <!-- SEÇÃO DE SERVIÇOS -->
-      <section id="servicos" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-black text-violet-800">
-              Proteção para todas as fases da vida
-            </h2>
-            <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">
-              Nossos serviços são pensados no seu bem-estar e de toda a sua
-              família.
-            </p>
-          </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Card 1: Todas as Idades -->
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300"
-            >
-              <div
-                class="h-48 bg-cover bg-center"
-                style="
-                  background-image: url('https://placehold.co/400x300/C4B5FD/4C1D95?text=Crianças+e+Adultos');
-                "
-              ></div>
-              <div class="p-6">
-                <h3 class="text-2xl font-extrabold text-violet-700 mb-2">
-                  Todas as Idades
-                </h3>
-                <p class="text-gray-600">
-                  Do recém-nascido ao idoso, incluindo gestantes.
-                </p>
-              </div>
-            </div>
-            <!-- Card 2: Atendimento Domiciliar -->
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300"
-            >
-              <div
-                class="h-48 bg-cover bg-center"
-                style="
-                  background-image: url('https://placehold.co/400x300/A5F3FC/0E7490?text=Atendimento+em+Casa');
-                "
-              ></div>
-              <div class="p-6">
-                <h3 class="text-2xl font-extrabold text-sky-700 mb-2">
-                  Atendimento Domiciliar
-                </h3>
-                <p class="text-gray-600">
-                  Levamos a proteção e o carinho até o conforto do seu lar.
-                </p>
-              </div>
-            </div>
-            <!-- Card 3: Empresas e Escolas -->
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300"
-            >
-              <div
-                class="h-48 bg-cover bg-center"
-                style="
-                  background-image: url('https://placehold.co/400x300/DDD6FE/4C1D95?text=Empresas');
-                "
-              ></div>
-              <div class="p-6">
-                <h3 class="text-2xl font-extrabold text-violet-700 mb-2">
-                  Empresas e Escolas
-                </h3>
-                <p class="text-gray-600">
-                  Promovendo saúde para equipes e alunos.
-                </p>
-              </div>
-            </div>
-            <!-- Card 4: Aplicação de Brincos -->
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300"
-            >
-              <div
-                class="h-48 bg-cover bg-center"
-                style="
-                  background-image: url('https://placehold.co/400x300/BAE6FD/0C4A6E?text=Brinquinhos');
-                "
-              ></div>
-              <div class="p-6">
-                <h3 class="text-2xl font-extrabold text-sky-700 mb-2">
-                  Aplicação de Brincos
-                </h3>
-                <p class="text-gray-600">
-                  O primeiro brinquinho com técnica humanizada e segura.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SEÇÃO DE VACINAS -->
-      <section id="vacinas" class="py-20 bg-violet-50">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-black text-gray-800">
-              Principais Vacinas Disponíveis
-            </h2>
-            <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">
-              Navegue por categoria para encontrar a vacina que você precisa.
-            </p>
-          </div>
-          <div class="max-w-4xl mx-auto">
-            <div class="mb-4 border-b border-gray-200">
-              <ul
-                class="flex flex-wrap -mb-px text-sm font-bold text-center"
-                id="tabs-container"
-              >
-                <li class="mr-2">
-                  <button
-                    class="tab-button inline-block p-4 border-b-2 rounded-t-lg"
-                    data-target="#criancas-tab"
-                  >
-                    Para Crianças
-                  </button>
-                </li>
-                <li class="mr-2">
-                  <button
-                    class="tab-button inline-block p-4 border-b-2 rounded-t-lg"
-                    data-target="#adolescentes-tab"
-                  >
-                    Para Adolescentes
-                  </button>
-                </li>
-                <li class="mr-2">
-                  <button
-                    class="tab-button inline-block p-4 border-b-2 rounded-t-lg"
-                    data-target="#adultos-tab"
-                  >
-                    Para Adultos
-                  </button>
-                </li>
-                <li class="mr-2">
-                  <button
-                    class="tab-button inline-block p-4 border-b-2 rounded-t-lg"
-                    data-target="#outros-tab"
-                  >
-                    Outros
-                  </button>
-                </li>
-              </ul>
-            </div>
-            <div id="tabs-content-container">
-              <div
-                id="criancas-tab"
-                class="tab-content bg-white p-6 rounded-lg shadow-md"
-              >
-                <ul class="space-y-2 text-gray-600 list-disc list-inside">
-                  <li>Hexavalente e Pentavalente</li>
-                  <li>Meningocócica B e ACWY</li>
-                  <li>Pneumocócica 13 e 15</li>
-                  <li>Rotavírus Pentavalente</li>
-                  <li>Tríplice Viral (Sarampo, Caxumba e Rubéola)</li>
-                  <li>Varicela (Catapora)</li>
-                </ul>
-              </div>
-              <div
-                id="adolescentes-tab"
-                class="tab-content hidden bg-white p-6 rounded-lg shadow-md"
-              >
-                <ul class="space-y-2 text-gray-600 list-disc list-inside">
-                  <li>HPV Nonavalente</li>
-                  <li>Meningocócica ACWY e B</li>
-                  <li>Dupla Adulto (dT - Difteria e Tétano)</li>
-                  <li>Febre Amarela</li>
-                  <li>Tríplice Viral</li>
-                  <li>Gripe (Influenza)</li>
-                </ul>
-              </div>
-              <div
-                id="adultos-tab"
-                class="tab-content hidden bg-white p-6 rounded-lg shadow-md"
-              >
-                <ul class="space-y-2 text-gray-600 list-disc list-inside">
-                  <li>Tríplice Bacteriana (dTpa)</li>
-                  <li>Hepatite A e B</li>
-                  <li>Herpes Zóster</li>
-                  <li>Pneumocócica 13 e 23</li>
-                  <li>Gripe (Influenza)</li>
-                  <li>Febre Amarela</li>
-                </ul>
-              </div>
-              <div
-                id="outros-tab"
-                class="tab-content hidden bg-white p-6 rounded-lg shadow-md"
-              >
-                <p class="font-semibold text-gray-700">
-                  Para Gestantes, Idosos e Viajantes:
-                </p>
-                <p class="text-gray-600 mt-2">
-                  Temos pacotes e vacinas específicas para cada necessidade. Por
-                  favor, entre em contato para uma consulta personalizada e para
-                  verificar a disponibilidade.
-                </p>
-              </div>
-            </div>
-          </div>
-          <p class="text-center text-gray-500 mt-8">
-            Esta é uma lista de nossas principais vacinas. Entre em contato para
-            consultar a disponibilidade e outras opções.
-          </p>
-        </div>
-      </section>
 
       <!-- SEÇÃO DE DIFERENCIAIS COM CARROSSEL -->
       <section id="diferenciais" class="py-20 bg-white">
@@ -552,6 +350,223 @@
           </div>
         </div>
       </section>
+
+      <!-- SEÇÃO DE SERVIÇOS -->
+      <section id="servicos" class="py-20 bg-bg-violet-50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-black text-violet-800">
+              Proteção para todas as fases da vida
+            </h2>
+            <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">
+              Nossos serviços são pensados no seu bem-estar e de toda a sua
+              família.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: Todas as Idades -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div
+                class="h-48 bg-cover bg-center"
+                style="
+                  background-image: url('https://placehold.co/400x300/C4B5FD/4C1D95?text=Crianças+e+Adultos');
+                "
+              ></div>
+              <div class="p-6">
+                <h3 class="text-2xl font-extrabold text-violet-700 mb-2">
+                  Todas as Idades
+                </h3>
+                <p class="text-gray-600">
+                  Do recém-nascido ao idoso, incluindo gestantes.
+                </p>
+              </div>
+            </div>
+            <!-- Card 2: Atendimento Domiciliar -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div
+                class="h-48 bg-cover bg-center"
+                style="
+                  background-image: url('https://placehold.co/400x300/A5F3FC/0E7490?text=Atendimento+em+Casa');
+                "
+              ></div>
+              <div class="p-6">
+                <h3 class="text-2xl font-extrabold text-sky-700 mb-2">
+                  Atendimento Domiciliar
+                </h3>
+                <p class="text-gray-600">
+                  Levamos a proteção e o carinho até o conforto do seu lar.
+                </p>
+              </div>
+            </div>
+            <!-- Card 3: Empresas e Escolas -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div
+                class="h-48 bg-cover bg-center"
+                style="
+                  background-image: url('https://placehold.co/400x300/DDD6FE/4C1D95?text=Empresas');
+                "
+              ></div>
+              <div class="p-6">
+                <h3 class="text-2xl font-extrabold text-violet-700 mb-2">
+                  Empresas e Escolas
+                </h3>
+                <p class="text-gray-600">
+                  Promovendo saúde para equipes e alunos.
+                </p>
+              </div>
+            </div>
+            <!-- Card 4: Aplicação de Brincos -->
+            <!-- <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div
+                class="h-48 bg-cover bg-center"
+                style="
+                  background-image: url('https://placehold.co/400x300/BAE6FD/0C4A6E?text=Brinquinhos');
+                "
+              ></div>
+              <div class="p-6">
+                <h3 class="text-2xl font-extrabold text-sky-700 mb-2">
+                  Aplicação de Brincos
+                </h3>
+                <p class="text-gray-600">
+                  O primeiro brinquinho com técnica humanizada e segura.
+                </p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO DE VACINAS -->
+      <section id="vacinas" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-black text-gray-800">
+              Principais Vacinas Disponíveis
+            </h2>
+            <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">
+              Navegue por categoria para encontrar a vacina que você precisa.
+            </p>
+          </div>
+          <div class="max-w-4xl mx-auto">
+            <div class="mb-4 border-b border-gray-200">
+              <ul
+                class="flex flex-wrap -mb-px text-sm font-bold text-center"
+                id="tabs-container"
+              >
+                <li class="mr-2">
+                  <button
+                    class="tab-button inline-block p-4 border-b-2 rounded-t-lg"
+                    data-target="#criancas-tab"
+                  >
+                    Para Crianças
+                  </button>
+                </li>
+                <li class="mr-2">
+                  <button
+                    class="tab-button inline-block p-4 border-b-2 rounded-t-lg"
+                    data-target="#adolescentes-tab"
+                  >
+                    Para Adolescentes
+                  </button>
+                </li>
+                <li class="mr-2">
+                  <button
+                    class="tab-button inline-block p-4 border-b-2 rounded-t-lg"
+                    data-target="#adultos-tab"
+                  >
+                    Para Adultos
+                  </button>
+                </li>
+                <li class="mr-2">
+                  <button
+                    class="tab-button inline-block p-4 border-b-2 rounded-t-lg"
+                    data-target="#outros-tab"
+                  >
+                    Outros
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div id="tabs-content-container">
+              <div
+                id="criancas-tab"
+                class="tab-content bg-white p-6 rounded-lg shadow-md"
+              >
+                <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                  <li>Hexavalente e Pentavalente</li>
+                  <li>Meningocócica B e ACWY</li>
+                  <li>Pneumocócica 13 e 15</li>
+                  <li>Rotavírus Pentavalente</li>
+                  <li>Tríplice Viral (Sarampo, Caxumba e Rubéola)</li>
+                  <li>Varicela (Catapora)</li>
+                </ul>
+              </div>
+              <div
+                id="adolescentes-tab"
+                class="tab-content hidden bg-white p-6 rounded-lg shadow-md"
+              >
+                <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                  <li>HPV Nonavalente</li>
+                  <li>Meningocócica ACWY e B</li>
+                  <li>Dupla Adulto (dT - Difteria e Tétano)</li>
+                  <li>Febre Amarela</li>
+                  <li>Tríplice Viral</li>
+                  <li>Gripe (Influenza)</li>
+                </ul>
+              </div>
+              <div
+                id="adultos-tab"
+                class="tab-content hidden bg-white p-6 rounded-lg shadow-md"
+              >
+                <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                  <li>Tríplice Bacteriana (dTpa)</li>
+                  <li>Hepatite A e B</li>
+                  <li>Herpes Zóster</li>
+                  <li>Pneumocócica 13 e 23</li>
+                  <li>Gripe (Influenza)</li>
+                  <li>Febre Amarela</li>
+                </ul>
+              </div>
+              <div
+                id="outros-tab"
+                class="tab-content hidden bg-white p-6 rounded-lg shadow-md"
+              >
+                <p class="font-semibold text-gray-700">
+                  Para Gestantes, Idosos e Viajantes:
+                </p>
+                <p class="text-gray-600 mt-2">
+                  Temos pacotes e vacinas específicas para cada necessidade. Por
+                  favor, entre em contato para uma consulta personalizada e para
+                  verificar a disponibilidade.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-gray-500 mt-4">
+            Esta é uma lista de nossas principais vacinas. Entre em contato para
+            consultar a disponibilidade e outras opções.
+          </p>
+          <div class="mt-12 text-center">
+            <a
+              href="https://wa.me/5531999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20vacina."
+              target="_blank"
+              class="inline-block btn-cta font-bold py-4 px-10 rounded-full text-xl"
+            >
+              Agendar pelo WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO DE DEPOIMENTOS -->
       <section class="py-20 bg-violet-50">
         <div class="container mx-auto px-6">
           <div class="text-center mb-12">
@@ -559,52 +574,181 @@
               O que nossas famílias dizem
             </h2>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Carrossel de Depoimentos -->
+          <div id="testimonials-carousel" class="relative max-w-3xl mx-auto">
+            <!-- Depoimento 1 -->
             <div
-              class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-violet-400"
+              class="testimonial-item opacity-100 transition-opacity duration-700 ease-in-out"
+              data-testimonial="0"
             >
-              <p class="text-gray-600 italic mb-4">
-                "Atendimento impecável! Meu filho, que sempre chorava para
-                vacinar, saiu sorrindo. A equipe é maravilhosa e o ambiente faz
-                toda a diferença."
-              </p>
-              <div class="flex items-center">
-                <img
-                  src="https://placehold.co/48x48/FBCFE8/9D174D?text=M"
-                  alt="Foto de Mariana R."
-                  class="w-12 h-12 rounded-full mr-4"
-                />
-                <div>
-                  <p class="font-bold text-gray-800">Mariana R.</p>
-                  <p class="text-sm text-gray-500">Mãe do Lucas</p>
+              <div
+                class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-violet-400 text-center"
+              >
+                <p class="text-gray-600 italic mb-6 text-lg">
+                  "Atendimento impecável! Meu filho, que sempre chorava para
+                  vacinar, saiu sorrindo. A equipe é maravilhosa e o ambiente
+                  faz toda a diferença."
+                </p>
+                <div class="flex items-center justify-center">
+                  <img
+                    src="https://placehold.co/48x48/FBCFE8/9D174D?text=M"
+                    alt="Foto de Mariana R."
+                    class="w-12 h-12 rounded-full mr-4"
+                  />
+                  <div>
+                    <p class="font-bold text-gray-800">Mariana R.</p>
+                    <p class="text-sm text-gray-500">Mãe do Lucas</p>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- Depoimento 2 -->
             <div
-              class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-sky-400"
+              class="testimonial-item absolute top-0 left-0 w-full opacity-0 transition-opacity duration-700 ease-in-out"
+              data-testimonial="1"
             >
-              <p class="text-gray-600 italic mb-4">
-                "Contratei o serviço de vacinação em casa para meus pais idosos
-                e foi a melhor decisão. Pontuais, cuidadosos e muito
-                profissionais. Recomendo!"
-              </p>
-              <div class="flex items-center">
-                <img
-                  src="https://placehold.co/48x48/A5F3FC/0E7490?text=C"
-                  alt="Foto de Carlos F."
-                  class="w-12 h-12 rounded-full mr-4"
-                />
-                <div>
-                  <p class="font-bold text-gray-800">Carlos F.</p>
-                  <p class="text-sm text-gray-500">
-                    Cliente do Atendimento Domiciliar
-                  </p>
+              <div
+                class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-sky-400 text-center"
+              >
+                <p class="text-gray-600 italic mb-6 text-lg">
+                  "Contratei o serviço de vacinação em casa para meus pais
+                  idosos e foi a melhor decisão. Pontuais, cuidadosos e muito
+                  profissionais. Recomendo!"
+                </p>
+                <div class="flex items-center justify-center">
+                  <img
+                    src="https://placehold.co/48x48/A5F3FC/0E7490?text=C"
+                    alt="Foto de Carlos F."
+                    class="w-12 h-12 rounded-full mr-4"
+                  />
+                  <div>
+                    <p class="font-bold text-gray-800">Carlos F.</p>
+                    <p class="text-sm text-gray-500">
+                      Cliente do Atendimento Domiciliar
+                    </p>
+                  </div>
                 </div>
               </div>
+            </div>
+            <!-- Depoimento 3 -->
+            <div
+              class="testimonial-item absolute top-0 left-0 w-full opacity-0 transition-opacity duration-700 ease-in-out"
+              data-testimonial="2"
+            >
+              <div
+                class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-emerald-400 text-center"
+              >
+                <p class="text-gray-600 italic mb-6 text-lg">
+                  "Levei minha empresa toda para vacinar na clínica. O
+                  atendimento foi excepcional, organizaram tudo perfeitamente e
+                  nossos funcionários ficaram muito satisfeitos. Voltaremos
+                  sempre!"
+                </p>
+                <div class="flex items-center justify-center">
+                  <img
+                    src="https://placehold.co/48x48/D1FAE5/059669?text=A"
+                    alt="Foto de Ana Paula S."
+                    class="w-12 h-12 rounded-full mr-4"
+                  />
+                  <div>
+                    <p class="font-bold text-gray-800">Ana Paula S.</p>
+                    <p class="text-sm text-gray-500">Gestora de RH</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Depoimento 4 -->
+            <div
+              class="testimonial-item absolute top-0 left-0 w-full opacity-0 transition-opacity duration-700 ease-in-out"
+              data-testimonial="3"
+            >
+              <div
+                class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-orange-400 text-center"
+              >
+                <p class="text-gray-600 italic mb-6 text-lg">
+                  "Primeira vez vacinando minha bebê e estava muito ansiosa. A
+                  equipe foi incrível, me acalmou e tornou tudo muito tranquilo.
+                  Ela nem chorou! Obrigada pelo carinho."
+                </p>
+                <div class="flex items-center justify-center">
+                  <img
+                    src="https://placehold.co/48x48/FED7AA/EA580C?text=J"
+                    alt="Foto de Juliana M."
+                    class="w-12 h-12 rounded-full mr-4"
+                  />
+                  <div>
+                    <p class="font-bold text-gray-800">Juliana M.</p>
+                    <p class="text-sm text-gray-500">Mãe da Sofia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Botões de Navegação -->
+            <button
+              id="testimonials-prev"
+              class="absolute top-1/2 -left-12 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition z-10"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6 text-violet-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+            <button
+              id="testimonials-next"
+              class="absolute top-1/2 -right-12 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition z-10"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6 text-violet-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+            <!-- Indicadores -->
+            <div
+              id="testimonials-dots"
+              class="flex justify-center space-x-2 mt-8"
+            >
+              <button
+                class="w-3 h-3 rounded-full bg-violet-600 transition"
+                data-dot="0"
+              ></button>
+              <button
+                class="w-3 h-3 rounded-full bg-violet-300 transition"
+                data-dot="1"
+              ></button>
+              <button
+                class="w-3 h-3 rounded-full bg-violet-300 transition"
+                data-dot="2"
+              ></button>
+              <button
+                class="w-3 h-3 rounded-full bg-violet-300 transition"
+                data-dot="3"
+              ></button>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- SEÇÃO DE CONTATO -->
       <section id="contato" class="bg-violet-700 text-white">
         <div class="relative">
           <div class="container mx-auto px-6 py-20 text-center relative">
@@ -887,6 +1031,92 @@
           );
 
           moveToSlide(0);
+        }
+
+        // --- SCRIPT PARA O CARROSSEL DE DEPOIMENTOS ---
+        const testimonialsCarousel = document.getElementById(
+          "testimonials-carousel"
+        );
+        if (testimonialsCarousel) {
+          const testimonialItems = Array.from(
+            testimonialsCarousel.querySelectorAll(".testimonial-item")
+          );
+          const testimonialsNextButton =
+            testimonialsCarousel.querySelector("#testimonials-next");
+          const testimonialsPrevButton =
+            testimonialsCarousel.querySelector("#testimonials-prev");
+          const testimonialsDots = Array.from(
+            testimonialsCarousel.querySelectorAll("#testimonials-dots button")
+          );
+
+          if (testimonialItems.length === 0) return;
+
+          let currentTestimonialsIndex = 0;
+
+          const showTestimonial = (targetIndex) => {
+            // Esconder todos os depoimentos
+            testimonialItems.forEach((item, index) => {
+              if (index === targetIndex) {
+                item.classList.remove("opacity-0");
+                item.classList.add("opacity-100");
+              } else {
+                item.classList.remove("opacity-100");
+                item.classList.add("opacity-0");
+              }
+            });
+
+            updateTestimonialsDots(targetIndex);
+            updateTestimonialsArrows(targetIndex);
+            currentTestimonialsIndex = targetIndex;
+          };
+
+          const updateTestimonialsDots = (currentIndex) => {
+            testimonialsDots.forEach((dot, index) => {
+              if (index === currentIndex) {
+                dot.classList.remove("bg-violet-300");
+                dot.classList.add("bg-violet-600");
+              } else {
+                dot.classList.remove("bg-violet-600");
+                dot.classList.add("bg-violet-300");
+              }
+            });
+          };
+
+          const updateTestimonialsArrows = (index) => {
+            // Remover estado desabilitado dos botões (permitir navegação circular)
+            testimonialsPrevButton.classList.remove("opacity-50");
+            testimonialsNextButton.classList.remove("opacity-50");
+            testimonialsPrevButton.disabled = false;
+            testimonialsNextButton.disabled = false;
+          };
+
+          testimonialsPrevButton.addEventListener("click", () => {
+            const prevIndex =
+              currentTestimonialsIndex === 0
+                ? testimonialItems.length - 1
+                : currentTestimonialsIndex - 1;
+            showTestimonial(prevIndex);
+          });
+
+          testimonialsNextButton.addEventListener("click", () => {
+            const nextIndex =
+              (currentTestimonialsIndex + 1) % testimonialItems.length;
+            showTestimonial(nextIndex);
+          });
+
+          testimonialsDots.forEach((dot, index) => {
+            dot.addEventListener("click", () => showTestimonial(index));
+          });
+
+          // Auto-play do carrossel
+          setInterval(() => {
+            const nextIndex =
+              (currentTestimonialsIndex + 1) % testimonialItems.length;
+            showTestimonial(nextIndex);
+          }, 4000); // Muda a cada 4 segundos
+
+          // Inicializar com o primeiro depoimento
+          showTestimonial(0);
         }
       });
     </script>
