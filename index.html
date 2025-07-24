@@ -162,35 +162,37 @@
     <main>
       <!-- SEÇÃO HERO -->
       <section
-        class="relative pt-20 pb-24 sm:pt-[14rem] sm:pb-48 overflow-hidden"
+        class="relative pt-24 pb-16 sm:pt-32 sm:pb-24 lg:pt-[14rem] lg:pb-48 overflow-hidden min-h-[80vh] sm:min-h-[90vh] flex items-center"
       >
         <div class="absolute inset-0 bg-violet-50"></div>
         <div class="absolute inset-0 bg-sky-200"></div>
 
         <div
-          class="absolute inset-0 block bg-no-repeat bg-[75%] bg-cover opacity-60 2xl:opacity-100"
+          class="absolute inset-0 block bg-no-repeat bg-[75%] sm:bg-[75%] bg-cover opacity-50 sm:opacity-60 2xl:opacity-100"
           style="background-image: url('./img/bg2.png')"
         ></div>
 
-        <div class="container mx-auto px-6 text-left relative">
-          <h1
-            class="text-4xl md:text-4xl lg:text-6xl font-black hero-text-gradient mb-4 leading-tight max-w-lg lg:max-w-2xl"
-          >
-            Cuidar de quem você ama é um ato de amor.
-          </h1>
-          <p
-            class="text-lg md:text-xl text-gray-600 max-w-lg lg:max-w-2xl mb-8 font-semibold"
-          >
-            A clínica de vacinas que transforma a proteção em um momento de
-            carinho e tranquilidade para toda a família.
-          </p>
-          <a
-            href="https://wa.me/5531999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20vacina."
-            target="_blank"
-            class="inline-block btn-cta font-bold py-4 px-10 rounded-full text-xl"
-          >
-            Agendar pelo WhatsApp
-          </a>
+        <div class="container mx-auto px-4 sm:px-6 text-left relative w-full">
+          <div class="max-w-lg sm:max-w-xl lg:max-w-2xl">
+            <h1
+              class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black hero-text-gradient mb-4 sm:mb-6 leading-tight"
+            >
+              Cuidar de quem você ama é um ato de amor.
+            </h1>
+            <p
+              class="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 font-semibold leading-relaxed"
+            >
+              A clínica de vacinas que transforma a proteção em um momento de
+              carinho e tranquilidade para toda a família.
+            </p>
+            <a
+              href="https://wa.me/5531999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20vacina."
+              target="_blank"
+              class="inline-block btn-cta font-bold py-3 px-6 sm:py-4 sm:px-10 rounded-full text-lg sm:text-xl w-full sm:w-auto text-center"
+            >
+              Agendar pelo WhatsApp
+            </a>
+          </div>
         </div>
       </section>
 
@@ -450,7 +452,10 @@
           </div>
 
           <!-- Mobile Carousel (visível apenas no mobile/tablet) -->
-          <div id="services-carousel" class="lg:hidden relative px-4 overflow-hidden">
+          <div
+            id="services-carousel"
+            class="lg:hidden relative px-4 overflow-hidden"
+          >
             <div
               class="services-track flex transition-transform duration-300 ease-in-out"
             >
@@ -1022,7 +1027,9 @@
                       d="M12.243 3.243a1 1 0 10-1.414 1.414L12.586 6l-1.06 1.06a1 1 0 101.414 1.414L14 7.414l1.06 1.06a1 1 0 101.414-1.414L15.414 6l1.06-1.06a1 1 0 10-1.414-1.414L14 4.586l-1.06-1.061-1.414.707.707-1.414zM6 12.586L4.586 14l-1.06-1.061a1 1 0 10-1.414 1.414L3.172 16l-1.06 1.06a1 1 0 101.414 1.414L4.586 17l1.06 1.06a1 1 0 101.414-1.414L6 15.414l1.06-1.06a1 1 0 10-1.414-1.414L6 12.586z"
                     />
                   </svg>
-                  <p>Rua Dom Pedro II, 780 - Centro - Governador Valadares - MG</p>
+                  <p>
+                    Rua Dom Pedro II, 780 - Centro - Governador Valadares - MG
+                  </p>
                 </li>
               </ul>
               <div class="mt-4 flex space-x-4">
