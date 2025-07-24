@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amo Vacinas - Cuidar é um ato de amor</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.imgur.com/k2tJc4p.png" type="image/png" />
+
+    <style>
+      /* Estilo para a nova fonte Nunito */
+      body {
+        font-family: "Nunito", sans-serif;
+      }
+
+      /* Efeito de gradiente no texto do Hero */
+      .hero-text-gradient {
+        background: linear-gradient(45deg, #6d28d9, #4f46e5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* --- NOVOS ESTILOS PARA BOTÕES E FUNDOS --- */
+      /* Estilo principal para botões de chamada para ação (CTA) */
+      .btn-cta {
+        background-color: #8b5cf6; /* Roxo principal */
+        color: white;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+      }
+      .btn-cta:hover {
+        transform: translateY(-3px);
+        background-color: #7c3aed;
+        box-shadow: 0 7px 20px rgba(139, 92, 246, 0.4);
+      }
+
+      /* --- ESTILOS PARA O CARROSSEL --- */
+      .carousel-track {
+        transition: transform 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-700">
+    <!-- CABEÇALHO -->
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm fixed w-full top-0 z-50">
+      <div
+        class="container mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-2">
+          <img
+            src="./logo.png"
+            alt="Logo Amo Vacinas"
+            class="h-12 w-auto"
+          />
+        </a>
+
+        <!-- Menu Desktop -->
+        <nav class="hidden md:flex space-x-8 font-bold">
+          <a
+            href="#servicos"
+            class="text-gray-600 hover:text-violet-600 transition-colors"
+            >Serviços</a
+          >
+          <a
+            href="#vacinas"
+            class="text-gray-600 hover:text-violet-600 transition-colors"
+            >Vacinas</a
+          >
+          <a
+            href="#diferenciais"
+            class="text-gray-600 hover:text-violet-600 transition-colors"
+            >Diferenciais</a
+          >
+          <a
+            href="#contato"
+            class="text-gray-600 hover:text-violet-600 transition-colors"
+            >Contato</a
+          >
+        </nav>
+
+        <!-- Botão de Ação -->
+        <a
+          href="https://wa.me/5531999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20vacina."
+          target="_blank"
+          class="hidden md:inline-block btn-cta font-bold py-2 px-6 rounded-full text-lg"
+        >
+          Agendar
+        </a>
+
+        <!-- Menu Mobile (Ícone) -->
+        <button id="mobile-menu-button" class="md:hidden">
+          <svg
+            class="w-6 h-6 text-gray-700"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+      <!-- Menu Mobile (Dropdown) -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <a
+          href="#servicos"
+          class="block py-3 px-6 text-gray-600 hover:bg-violet-50 font-bold"
+          >Serviços</a
+        >
+        <a
+          href="#vacinas"
+          class="block py-3 px-6 text-gray-600 hover:bg-violet-50 font-bold"
+          >Vacinas</a
+        >
+        <a
+          href="#diferenciais"
+          class="block py-3 px-6 text-gray-600 hover:bg-violet-50 font-bold"
+          >Diferenciais</a
+        >
+        <a
+          href="#contato"
+          class="block py-3 px-6 text-gray-600 hover:bg-violet-50 font-bold"
+          >Contato</a
+        >
+        <div class="p-4">
+          <a
+            href="https://wa.me/5531999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20vacina."
+            target="_blank"
+            class="w-full text-center btn-cta font-bold py-3 px-5 rounded-full text-lg"
+          >
+            Agendar Agora
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SEÇÃO HERO -->
+      <section class="relative pt-20 pb-24 sm:pt-[14rem] sm:pb-48 overflow-hidden">
+        <div class="absolute inset-0 bg-violet-50"></div>
+        <div class="absolute inset-0 bg-sky-200"></div>
+
+        <div
+          class="absolute inset-0 block bg-no-repeat bg-[75%] bg-cover opacity-60 2xl:opacity-100"
+          style="background-image: url('bg2.png');"
+        ></div>
+
+        <div class="container mx-auto px-6 text-left relative">
+          <h1
+            class="text-4xl md:text-4xl lg:text-6xl font-black hero-text-gradient mb-4 leading-tight max-w-lg lg:max-w-2xl"
+          >
+            Cuidar de quem você ama é um ato de amor.
+          </h1>
+          <p
+            class="text-lg md:text-xl text-gray-600 max-w-lg lg:max-w-2xl mb-8 font-semibold"
+          >
+            A clínica de vacinas que transforma a proteção em um momento de
+            carinho e tranquilidade para toda a família.
+          </p>
+          <a
+            href="https://wa.me/5531999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20vacina."
+            target="_blank"
+            class="inline-block btn-cta font-bold py-4 px-10 rounded-full text-xl"
+          >
+            Agendar pelo WhatsApp
+          </a>
+        </div>
+      </section>
+
+      <!-- Divisor Ondulado -->
+      <!-- <div class="bg-violet-50">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L80,144C160,160,320,192,480,186.7C640,181,800,139,960,133.3C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+        </div> -->
+
+      <!-- SEÇÃO DE SERVIÇOS -->
+      <section id="servicos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-black text-violet-800">
+              Proteção para todas as fases da vida
+            </h2>
+            <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">
+              Nossos serviços são pensados no seu bem-estar e de toda a sua
+              família.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Card 1: Todas as Idades -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div
+                class="h-48 bg-cover bg-center"
+                style="
+                  background-image: url('https://placehold.co/400x300/C4B5FD/4C1D95?text=Crianças+e+Adultos');
+                "
+              ></div>
+              <div class="p-6">
+                <h3 class="text-2xl font-extrabold text-violet-700 mb-2">
+                  Todas as Idades
+                </h3>
+                <p class="text-gray-600">
+                  Do recém-nascido ao idoso, incluindo gestantes.
+                </p>
+              </div>
+            </div>
+            <!-- Card 2: Atendimento Domiciliar -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div
+                class="h-48 bg-cover bg-center"
+                style="
+                  background-image: url('https://placehold.co/400x300/A5F3FC/0E7490?text=Atendimento+em+Casa');
+                "
+              ></div>
+              <div class="p-6">
+                <h3 class="text-2xl font-extrabold text-sky-700 mb-2">
+                  Atendimento Domiciliar
+                </h3>
+                <p class="text-gray-600">
+                  Levamos a proteção e o carinho até o conforto do seu lar.
+                </p>
+              </div>
+            </div>
+            <!-- Card 3: Empresas e Escolas -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div
+                class="h-48 bg-cover bg-center"
+                style="
+                  background-image: url('https://placehold.co/400x300/DDD6FE/4C1D95?text=Empresas');
+                "
+              ></div>
+              <div class="p-6">
+                <h3 class="text-2xl font-extrabold text-violet-700 mb-2">
+                  Empresas e Escolas
+                </h3>
+                <p class="text-gray-600">
+                  Promovendo saúde para equipes e alunos.
+                </p>
+              </div>
+            </div>
+            <!-- Card 4: Aplicação de Brincos -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div
+                class="h-48 bg-cover bg-center"
+                style="
+                  background-image: url('https://placehold.co/400x300/BAE6FD/0C4A6E?text=Brinquinhos');
+                "
+              ></div>
+              <div class="p-6">
+                <h3 class="text-2xl font-extrabold text-sky-700 mb-2">
+                  Aplicação de Brincos
+                </h3>
+                <p class="text-gray-600">
+                  O primeiro brinquinho com técnica humanizada e segura.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO DE VACINAS -->
+      <section id="vacinas" class="py-20 bg-violet-50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-black text-gray-800">
+              Principais Vacinas Disponíveis
+            </h2>
+            <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">
+              Navegue por categoria para encontrar a vacina que você precisa.
+            </p>
+          </div>
+          <div class="max-w-4xl mx-auto">
+            <div class="mb-4 border-b border-gray-200">
+              <ul
+                class="flex flex-wrap -mb-px text-sm font-bold text-center"
+                id="tabs-container"
+              >
+                <li class="mr-2">
+                  <button
+                    class="tab-button inline-block p-4 border-b-2 rounded-t-lg"
+                    data-target="#criancas-tab"
+                  >
+                    Para Crianças
+                  </button>
+                </li>
+                <li class="mr-2">
+                  <button
+                    class="tab-button inline-block p-4 border-b-2 rounded-t-lg"
+                    data-target="#adolescentes-tab"
+                  >
+                    Para Adolescentes
+                  </button>
+                </li>
+                <li class="mr-2">
+                  <button
+                    class="tab-button inline-block p-4 border-b-2 rounded-t-lg"
+                    data-target="#adultos-tab"
+                  >
+                    Para Adultos
+                  </button>
+                </li>
+                <li class="mr-2">
+                  <button
+                    class="tab-button inline-block p-4 border-b-2 rounded-t-lg"
+                    data-target="#outros-tab"
+                  >
+                    Outros
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div id="tabs-content-container">
+              <div
+                id="criancas-tab"
+                class="tab-content bg-white p-6 rounded-lg shadow-md"
+              >
+                <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                  <li>Hexavalente e Pentavalente</li>
+                  <li>Meningocócica B e ACWY</li>
+                  <li>Pneumocócica 13 e 15</li>
+                  <li>Rotavírus Pentavalente</li>
+                  <li>Tríplice Viral (Sarampo, Caxumba e Rubéola)</li>
+                  <li>Varicela (Catapora)</li>
+                </ul>
+              </div>
+              <div
+                id="adolescentes-tab"
+                class="tab-content hidden bg-white p-6 rounded-lg shadow-md"
+              >
+                <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                  <li>HPV Nonavalente</li>
+                  <li>Meningocócica ACWY e B</li>
+                  <li>Dupla Adulto (dT - Difteria e Tétano)</li>
+                  <li>Febre Amarela</li>
+                  <li>Tríplice Viral</li>
+                  <li>Gripe (Influenza)</li>
+                </ul>
+              </div>
+              <div
+                id="adultos-tab"
+                class="tab-content hidden bg-white p-6 rounded-lg shadow-md"
+              >
+                <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                  <li>Tríplice Bacteriana (dTpa)</li>
+                  <li>Hepatite A e B</li>
+                  <li>Herpes Zóster</li>
+                  <li>Pneumocócica 13 e 23</li>
+                  <li>Gripe (Influenza)</li>
+                  <li>Febre Amarela</li>
+                </ul>
+              </div>
+              <div
+                id="outros-tab"
+                class="tab-content hidden bg-white p-6 rounded-lg shadow-md"
+              >
+                <p class="font-semibold text-gray-700">
+                  Para Gestantes, Idosos e Viajantes:
+                </p>
+                <p class="text-gray-600 mt-2">
+                  Temos pacotes e vacinas específicas para cada necessidade. Por
+                  favor, entre em contato para uma consulta personalizada e para
+                  verificar a disponibilidade.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-gray-500 mt-8">
+            Esta é uma lista de nossas principais vacinas. Entre em contato para
+            consultar a disponibilidade e outras opções.
+          </p>
+        </div>
+      </section>
+
+      <!-- SEÇÃO DE DIFERENCIAIS COM CARROSSEL -->
+      <section id="diferenciais" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-black text-violet-800">
+              Muito além da vacina, um gesto de amor
+            </h2>
+            <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">
+              Criamos uma experiência positiva para que a vacinação seja um
+              momento tranquilo.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Carrossel de Imagens -->
+            <div
+              id="image-carousel"
+              class="relative w-full max-w-lg mx-auto rounded-2xl shadow-xl overflow-hidden"
+            >
+              <div class="carousel-track flex">
+                <!-- Slides -->
+                <div class="carousel-slide w-full flex-shrink-0">
+                  <img
+                    src="https://placehold.co/600x400/C084FC/FFFFFF?text=Foto+da+Recepção"
+                    alt="Foto da Recepção da clínica"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="carousel-slide w-full flex-shrink-0">
+                  <img
+                    src="https://placehold.co/600x400/67E8F9/FFFFFF?text=Sala+de+Vacinação"
+                    alt="Sala de vacinação lúdica"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="carousel-slide w-full flex-shrink-0">
+                  <img
+                    src="https://placehold.co/600x400/A78BFA/FFFFFF?text=Espaço+Kids"
+                    alt="Espaço kids da clínica"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <!-- Botões de Navegação -->
+              <button
+                id="carousel-prev"
+                class="absolute top-1/2 left-3 transform -translate-y-1/2 bg-white/70 hover:bg-white rounded-full p-2 transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-violet-600"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5L8.25 12l7.5-7.5"
+                  />
+                </svg>
+              </button>
+              <button
+                id="carousel-next"
+                class="absolute top-1/2 right-3 transform -translate-y-1/2 bg-white/70 hover:bg-white rounded-full p-2 transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-violet-600"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </button>
+              <!-- Indicadores -->
+              <div
+                id="carousel-dots"
+                class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2"
+              ></div>
+            </div>
+            <!-- Texto -->
+            <div class="order-first md:order-last">
+              <div class="flex items-start mb-6">
+                <div
+                  class="bg-violet-100 text-violet-600 rounded-full p-3 mr-4 flex-shrink-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-6 h-6"
+                  >
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                    <path
+                      d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-1">
+                    Ambiente Lúdico e Acolhedor
+                  </h3>
+                  <p class="text-gray-600">
+                    Nossas salas são temáticas para diminuir a ansiedade e o
+                    medo, transformando a experiência em algo positivo e até
+                    divertido.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                  class="bg-sky-100 text-sky-600 rounded-full p-3 mr-4 flex-shrink-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-1">Atendimento Humanizado</h3>
+                  <p class="text-gray-600">
+                    Nossa equipe é especialista em oferecer um atendimento com
+                    empatia, paciência e carinho, respeitando o tempo de cada
+                    um.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 bg-violet-50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-black text-violet-800">
+              O que nossas famílias dizem
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-violet-400"
+            >
+              <p class="text-gray-600 italic mb-4">
+                "Atendimento impecável! Meu filho, que sempre chorava para
+                vacinar, saiu sorrindo. A equipe é maravilhosa e o ambiente faz
+                toda a diferença."
+              </p>
+              <div class="flex items-center">
+                <img
+                  src="https://placehold.co/48x48/FBCFE8/9D174D?text=M"
+                  alt="Foto de Mariana R."
+                  class="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <p class="font-bold text-gray-800">Mariana R.</p>
+                  <p class="text-sm text-gray-500">Mãe do Lucas</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-sky-400"
+            >
+              <p class="text-gray-600 italic mb-4">
+                "Contratei o serviço de vacinação em casa para meus pais idosos
+                e foi a melhor decisão. Pontuais, cuidadosos e muito
+                profissionais. Recomendo!"
+              </p>
+              <div class="flex items-center">
+                <img
+                  src="https://placehold.co/48x48/A5F3FC/0E7490?text=C"
+                  alt="Foto de Carlos F."
+                  class="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <p class="font-bold text-gray-800">Carlos F.</p>
+                  <p class="text-sm text-gray-500">
+                    Cliente do Atendimento Domiciliar
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contato" class="bg-violet-700 text-white">
+        <div class="relative">
+          <div class="container mx-auto px-6 py-20 text-center relative">
+            <h2 class="text-3xl md:text-4xl font-black mb-4">
+              Não adie o cuidado.
+            </h2>
+            <p
+              class="text-lg md:text-xl text-violet-100 max-w-3xl mx-auto mb-8"
+            >
+              A saúde da sua família é o seu bem mais precioso. Fale com nossa
+              equipe agora mesmo e tire todas as suas dúvidas. Estamos prontos
+              para te ajudar!
+            </p>
+            <a
+              href="https://wa.me/5531999999999?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida."
+              target="_blank"
+              class="inline-block btn-cta font-bold py-4 px-10 rounded-full text-xl"
+            >
+              Falar com um Especialista
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-gray-700 text-gray-300">
+      <div class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Coluna da Esquerda: Info e Contato -->
+          <div>
+            <div class="mb-6">
+              <a href="#" class="flex items-center space-x-2 mb-4">
+                <img
+                  src="https://i.imgur.com/k2tJc4p.png"
+                  alt="Logo Amo Vacinas no Rodapé"
+                  class="h-12 w-auto"
+                />
+              </a>
+              <p class="text-gray-400 max-w-sm">
+                Transformando a vacinação em um ato de amor e cuidado para toda
+                a família.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-bold text-white mb-4">Contato e Endereço</h4>
+              <ul class="space-y-2 text-sm">
+                <li>
+                  <a
+                    href="tel:+553125818978"
+                    class="hover:text-sky-400 transition-colors flex items-center"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="w-5 h-5 mr-2"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.1a1.5 1.5 0 01-2.172 1.83l-.028-.014l-.002-.001a11.174 11.174 0 00-2.293 3.764l.002.002l.014.028a1.5 1.5 0 01-1.83 2.172l-3.1-.715A1.5 1.5 0 012 13.352V3.5z"
+                        clip-rule="evenodd"
+                      />
+                      <path
+                        d="M16.5 2a1.5 1.5 0 011.5 1.5v1.148a1.5 1.5 0 01-1.175 1.465l-3.1.716a1.5 1.5 0 01-1.83-2.172l.014-.028l.002-.002a11.174 11.174 0 00-3.764-2.293l-.002-.002l-.028-.014A1.5 1.5 0 018.648 2H16.5z"
+                      /></svg
+                    >Telefone: (31) 2581-8978</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:contato@amovacinas.com.br"
+                    class="hover:text-sky-400 transition-colors flex items-center"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="w-5 h-5 mr-2"
+                    >
+                      <path
+                        d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z"
+                      />
+                      <path
+                        d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z"
+                      /></svg
+                    >contato@amovacinas.com.br</a
+                  >
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 00.281-.14c.186-.1.4-.27.615-.454l.644-.545a3.289 3.289 0 00-4.343-4.343L6.717 10l-1.06-1.061a3.289 3.289 0 00-4.343 4.343l.545.644c.184.215.354.429.454.615.095.165.13.242.14.282l.008.018.003.006.001.002zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                      clip-rule="evenodd"
+                    />
+                    <path
+                      d="M12.243 3.243a1 1 0 10-1.414 1.414L12.586 6l-1.06 1.06a1 1 0 101.414 1.414L14 7.414l1.06 1.06a1 1 0 101.414-1.414L15.414 6l1.06-1.06a1 1 0 10-1.414-1.414L14 4.586l-1.06-1.061-1.414.707.707-1.414zM6 12.586L4.586 14l-1.06-1.061a1 1 0 10-1.414 1.414L3.172 16l-1.06 1.06a1 1 0 101.414 1.414L4.586 17l1.06 1.06a1 1 0 101.414-1.414L6 15.414l1.06-1.06a1 1 0 10-1.414-1.414L6 12.586z"
+                    />
+                  </svg>
+                  <p>Alameda Oscar Niemeyer, 500 - Lj 03, Nova Lima - MG</p>
+                </li>
+              </ul>
+              <div class="mt-4 flex space-x-4">
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-sky-400 transition-colors"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-6 h-6"
+                  >
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg
+                ></a>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-sky-400 transition-colors"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                    /></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- Coluna da Direita: Google Maps -->
+          <div class="w-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.395240398845!2d-43.9543699256958!3d-19.94990923831804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6970624831811%3A0x644c33092cb33e4a!2sAlameda%20Oscar%20Niemeyer%2C%20500%20-%20Vila%20da%20Serra%2C%20Nova%20Lima%20-%20MG%2C%2034006-056!5e0!3m2!1spt-BR!2sbr!4v1678886400000!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="rounded-lg shadow-md"
+            >
+            </iframe>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-500"
+        >
+          <p>&copy; 2024 Amo Vacinas. Todos os direitos reservados.</p>
+          <p>Responsável Técnico: Dr. Nome Sobrenome - CRM/MG 12345</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Script para o menu mobile
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        if (mobileMenuButton && mobileMenu) {
+          mobileMenuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+          });
+          document.querySelectorAll("#mobile-menu a").forEach((link) => {
+            link.addEventListener("click", () => {
+              mobileMenu.classList.add("hidden");
+            });
+          });
+        }
+
+        // Script para as abas de vacinas
+        const tabButtons = document.querySelectorAll(".tab-button");
+        const tabContents = document.querySelectorAll(".tab-content");
+        function showTab(targetId) {
+          tabContents.forEach((c) => c.classList.add("hidden"));
+          tabButtons.forEach((b) => {
+            b.classList.remove("border-violet-500", "text-violet-600");
+            b.classList.add(
+              "border-transparent",
+              "text-gray-500",
+              "hover:text-gray-700",
+              "hover:border-gray-300"
+            );
+          });
+          const targetContent = document.querySelector(targetId);
+          const activeButton = document.querySelector(
+            `[data-target='${targetId}']`
+          );
+          if (targetContent && activeButton) {
+            targetContent.classList.remove("hidden");
+            activeButton.classList.add("border-violet-500", "text-violet-600");
+            activeButton.classList.remove(
+              "border-transparent",
+              "text-gray-500"
+            );
+          }
+        }
+        tabButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            showTab(button.getAttribute("data-target"));
+          });
+        });
+        if (tabButtons.length > 0) {
+          showTab(tabButtons[0].getAttribute("data-target"));
+        }
+
+        // --- SCRIPT PARA O CARROSSEL DE IMAGENS ---
+        const carousel = document.getElementById("image-carousel");
+        if (carousel) {
+          const track = carousel.querySelector(".carousel-track");
+          const slides = Array.from(track.children);
+          const nextButton = carousel.querySelector("#carousel-next");
+          const prevButton = carousel.querySelector("#carousel-prev");
+          const dotsNav = carousel.querySelector("#carousel-dots");
+
+          if (slides.length === 0) return;
+
+          const slideWidth = slides[0].getBoundingClientRect().width;
+
+          slides.forEach((slide, index) => {
+            const dot = document.createElement("button");
+            dot.classList.add(
+              "w-3",
+              "h-3",
+              "rounded-full",
+              "bg-white/50",
+              "transition"
+            );
+            dotsNav.appendChild(dot);
+            dot.addEventListener("click", () => moveToSlide(index));
+          });
+          const dots = Array.from(dotsNav.children);
+
+          const moveToSlide = (targetIndex) => {
+            track.style.transform =
+              "translateX(-" + slideWidth * targetIndex + "px)";
+            updateDots(targetIndex);
+            updateArrows(targetIndex);
+          };
+
+          const updateDots = (currentIndex) => {
+            dots.forEach((dot, index) => {
+              dot.classList.toggle("bg-white", index === currentIndex);
+              dot.classList.toggle("bg-white/50", index !== currentIndex);
+            });
+          };
+
+          let currentIndex = 0;
+          const updateArrows = (index) => {
+            currentIndex = index;
+            prevButton.disabled = index === 0;
+            nextButton.disabled = index === slides.length - 1;
+            prevButton.classList.toggle("opacity-50", prevButton.disabled);
+            nextButton.classList.toggle("opacity-50", nextButton.disabled);
+          };
+
+          prevButton.addEventListener("click", () =>
+            moveToSlide(currentIndex - 1)
+          );
+          nextButton.addEventListener("click", () =>
+            moveToSlide(currentIndex + 1)
+          );
+
+          moveToSlide(0);
+        }
+      });
+    </script>
+  </body>
+</html>
