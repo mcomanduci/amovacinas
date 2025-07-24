@@ -50,6 +50,11 @@
       .carousel-track {
         transition: transform 0.5s ease-in-out;
       }
+
+      /* Estilo para o carrossel de serviços mobile */
+      .services-track {
+        transition: transform 0.3s ease-in-out;
+      }
     </style>
   </head>
   <body class="bg-gray-50 text-gray-700">
@@ -363,7 +368,9 @@
               família.
             </p>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Desktop Grid (escondido no mobile) -->
+          <div class="hidden lg:grid lg:grid-cols-4 gap-8">
             <!-- Card 1: Todas as Idades -->
             <div
               class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300"
@@ -422,7 +429,7 @@
               </div>
             </div>
             <!-- Card 4: Aplicação de Brincos -->
-            <!-- <div
+            <div
               class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300"
             >
               <div
@@ -439,7 +446,159 @@
                   O primeiro brinquinho com técnica humanizada e segura.
                 </p>
               </div>
-            </div> -->
+            </div>
+          </div>
+
+          <!-- Mobile Carousel (visível apenas no mobile/tablet) -->
+          <div id="services-carousel" class="lg:hidden relative px-4">
+            <div
+              class="services-track flex transition-transform duration-300 ease-in-out"
+            >
+              <!-- Card 1: Todas as Idades -->
+              <div class="services-slide w-full flex-shrink-0 px-2">
+                <div
+                  class="bg-white rounded-xl shadow-lg overflow-hidden mx-auto max-w-sm"
+                >
+                  <div
+                    class="h-48 bg-cover bg-center"
+                    style="
+                      background-image: url('https://placehold.co/400x300/C4B5FD/4C1D95?text=Crianças+e+Adultos');
+                    "
+                  ></div>
+                  <div class="p-6 text-center">
+                    <h3 class="text-2xl font-extrabold text-violet-700 mb-2">
+                      Todas as Idades
+                    </h3>
+                    <p class="text-gray-600">
+                      Do recém-nascido ao idoso, incluindo gestantes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2: Atendimento Domiciliar -->
+              <div class="services-slide w-full flex-shrink-0 px-2">
+                <div
+                  class="bg-white rounded-xl shadow-lg overflow-hidden mx-auto max-w-sm"
+                >
+                  <div
+                    class="h-48 bg-cover bg-center"
+                    style="
+                      background-image: url('https://placehold.co/400x300/A5F3FC/0E7490?text=Atendimento+em+Casa');
+                    "
+                  ></div>
+                  <div class="p-6 text-center">
+                    <h3 class="text-2xl font-extrabold text-sky-700 mb-2">
+                      Atendimento Domiciliar
+                    </h3>
+                    <p class="text-gray-600">
+                      Levamos a proteção e o carinho até o conforto do seu lar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3: Empresas e Escolas -->
+              <div class="services-slide w-full flex-shrink-0 px-2">
+                <div
+                  class="bg-white rounded-xl shadow-lg overflow-hidden mx-auto max-w-sm"
+                >
+                  <div
+                    class="h-48 bg-cover bg-center"
+                    style="
+                      background-image: url('https://placehold.co/400x300/DDD6FE/4C1D95?text=Empresas');
+                    "
+                  ></div>
+                  <div class="p-6 text-center">
+                    <h3 class="text-2xl font-extrabold text-violet-700 mb-2">
+                      Empresas e Escolas
+                    </h3>
+                    <p class="text-gray-600">
+                      Promovendo saúde para equipes e alunos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4: Aplicação de Brincos -->
+              <div class="services-slide w-full flex-shrink-0 px-2">
+                <div
+                  class="bg-white rounded-xl shadow-lg overflow-hidden mx-auto max-w-sm"
+                >
+                  <div
+                    class="h-48 bg-cover bg-center"
+                    style="
+                      background-image: url('https://placehold.co/400x300/BAE6FD/0C4A6E?text=Brinquinhos');
+                    "
+                  ></div>
+                  <div class="p-6 text-center">
+                    <h3 class="text-2xl font-extrabold text-sky-700 mb-2">
+                      Aplicação de Brincos
+                    </h3>
+                    <p class="text-gray-600">
+                      O primeiro brinquinho com técnica humanizada e segura.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botões de Navegação Mobile -->
+            <button
+              id="services-prev"
+              class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 shadow-lg transition z-10"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-5 h-5 text-violet-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+            <button
+              id="services-next"
+              class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 shadow-lg transition z-10"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-5 h-5 text-violet-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+
+            <!-- Indicadores Mobile -->
+            <div id="services-dots" class="flex justify-center space-x-2 mt-6">
+              <button
+                class="w-3 h-3 rounded-full bg-violet-600 transition"
+                data-service-dot="0"
+              ></button>
+              <button
+                class="w-3 h-3 rounded-full bg-violet-300 transition"
+                data-service-dot="1"
+              ></button>
+              <button
+                class="w-3 h-3 rounded-full bg-violet-300 transition"
+                data-service-dot="2"
+              ></button>
+              <button
+                class="w-3 h-3 rounded-full bg-violet-300 transition"
+                data-service-dot="3"
+              ></button>
+            </div>
           </div>
         </div>
       </section>
@@ -575,16 +734,21 @@
             </h2>
           </div>
           <!-- Carrossel de Depoimentos -->
-          <div id="testimonials-carousel" class="relative max-w-3xl mx-auto">
+          <div
+            id="testimonials-carousel"
+            class="relative max-w-4xl mx-auto px-4 md:px-12"
+          >
             <!-- Depoimento 1 -->
             <div
               class="testimonial-item opacity-100 transition-opacity duration-700 ease-in-out"
               data-testimonial="0"
             >
               <div
-                class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-violet-400 text-center"
+                class="bg-white p-6 md:p-8 rounded-xl shadow-lg border-l-4 border-violet-400 text-center"
               >
-                <p class="text-gray-600 italic mb-6 text-lg">
+                <p
+                  class="text-gray-600 italic mb-6 text-base md:text-lg leading-relaxed"
+                >
                   "Atendimento impecável! Meu filho, que sempre chorava para
                   vacinar, saiu sorrindo. A equipe é maravilhosa e o ambiente
                   faz toda a diferença."
@@ -604,13 +768,15 @@
             </div>
             <!-- Depoimento 2 -->
             <div
-              class="testimonial-item absolute top-0 left-0 w-full opacity-0 transition-opacity duration-700 ease-in-out"
+              class="testimonial-item absolute top-0 left-4 md:left-12 right-4 md:right-12 opacity-0 transition-opacity duration-700 ease-in-out"
               data-testimonial="1"
             >
               <div
-                class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-sky-400 text-center"
+                class="bg-white p-6 md:p-8 rounded-xl shadow-lg border-l-4 border-sky-400 text-center"
               >
-                <p class="text-gray-600 italic mb-6 text-lg">
+                <p
+                  class="text-gray-600 italic mb-6 text-base md:text-lg leading-relaxed"
+                >
                   "Contratei o serviço de vacinação em casa para meus pais
                   idosos e foi a melhor decisão. Pontuais, cuidadosos e muito
                   profissionais. Recomendo!"
@@ -632,13 +798,15 @@
             </div>
             <!-- Depoimento 3 -->
             <div
-              class="testimonial-item absolute top-0 left-0 w-full opacity-0 transition-opacity duration-700 ease-in-out"
+              class="testimonial-item absolute top-0 left-4 md:left-12 right-4 md:right-12 opacity-0 transition-opacity duration-700 ease-in-out"
               data-testimonial="2"
             >
               <div
-                class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-emerald-400 text-center"
+                class="bg-white p-6 md:p-8 rounded-xl shadow-lg border-l-4 border-emerald-400 text-center"
               >
-                <p class="text-gray-600 italic mb-6 text-lg">
+                <p
+                  class="text-gray-600 italic mb-6 text-base md:text-lg leading-relaxed"
+                >
                   "Levei minha empresa toda para vacinar na clínica. O
                   atendimento foi excepcional, organizaram tudo perfeitamente e
                   nossos funcionários ficaram muito satisfeitos. Voltaremos
@@ -659,13 +827,15 @@
             </div>
             <!-- Depoimento 4 -->
             <div
-              class="testimonial-item absolute top-0 left-0 w-full opacity-0 transition-opacity duration-700 ease-in-out"
+              class="testimonial-item absolute top-0 left-4 md:left-12 right-4 md:right-12 opacity-0 transition-opacity duration-700 ease-in-out"
               data-testimonial="3"
             >
               <div
-                class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-orange-400 text-center"
+                class="bg-white p-6 md:p-8 rounded-xl shadow-lg border-l-4 border-orange-400 text-center"
               >
-                <p class="text-gray-600 italic mb-6 text-lg">
+                <p
+                  class="text-gray-600 italic mb-6 text-base md:text-lg leading-relaxed"
+                >
                   "Primeira vez vacinando minha bebê e estava muito ansiosa. A
                   equipe foi incrível, me acalmou e tornou tudo muito tranquilo.
                   Ela nem chorou! Obrigada pelo carinho."
@@ -686,7 +856,7 @@
             <!-- Botões de Navegação -->
             <button
               id="testimonials-prev"
-              class="absolute top-1/2 -left-12 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition z-10"
+              class="absolute top-1/2 left-0 md:-left-12 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 md:p-3 shadow-lg transition z-10"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -694,7 +864,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="2"
                 stroke="currentColor"
-                class="w-6 h-6 text-violet-600"
+                class="w-5 h-5 md:w-6 md:h-6 text-violet-600"
               >
                 <path
                   stroke-linecap="round"
@@ -705,7 +875,7 @@
             </button>
             <button
               id="testimonials-next"
-              class="absolute top-1/2 -right-12 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition z-10"
+              class="absolute top-1/2 right-0 md:-right-12 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 md:p-3 shadow-lg transition z-10"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -713,7 +883,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="2"
                 stroke="currentColor"
-                class="w-6 h-6 text-violet-600"
+                class="w-5 h-5 md:w-6 md:h-6 text-violet-600"
               >
                 <path
                   stroke-linecap="round"
@@ -725,7 +895,7 @@
             <!-- Indicadores -->
             <div
               id="testimonials-dots"
-              class="flex justify-center space-x-2 mt-8"
+              class="flex justify-center space-x-2 mt-6 md:mt-8"
             >
               <button
                 class="w-3 h-3 rounded-full bg-violet-600 transition"
@@ -783,7 +953,7 @@
             <div class="mb-6">
               <a href="#" class="flex items-center space-x-2 mb-4">
                 <img
-                  src="https://i.imgur.com/k2tJc4p.png"
+                  src="./img/logo.png"
                   alt="Logo Amo Vacinas no Rodapé"
                   class="h-12 w-auto"
                 />
@@ -1117,6 +1287,81 @@
 
           // Inicializar com o primeiro depoimento
           showTestimonial(0);
+        }
+
+        // --- SCRIPT PARA O CARROSSEL DE SERVIÇOS MOBILE ---
+        const servicesCarousel = document.getElementById("services-carousel");
+        if (servicesCarousel) {
+          const servicesTrack =
+            servicesCarousel.querySelector(".services-track");
+          const servicesSlides = Array.from(servicesTrack.children);
+          const servicesNextButton =
+            servicesCarousel.querySelector("#services-next");
+          const servicesPrevButton =
+            servicesCarousel.querySelector("#services-prev");
+          const servicesDots = Array.from(
+            servicesCarousel.querySelectorAll("#services-dots button")
+          );
+
+          if (servicesSlides.length === 0) return;
+
+          let currentServicesIndex = 0;
+
+          const moveToServicesSlide = (targetIndex) => {
+            servicesTrack.style.transform = `translateX(-${
+              100 * targetIndex
+            }%)`;
+            updateServicesDots(targetIndex);
+            updateServicesArrows(targetIndex);
+            currentServicesIndex = targetIndex;
+          };
+
+          const updateServicesDots = (currentIndex) => {
+            servicesDots.forEach((dot, index) => {
+              if (index === currentIndex) {
+                dot.classList.remove("bg-violet-300");
+                dot.classList.add("bg-violet-600");
+              } else {
+                dot.classList.remove("bg-violet-600");
+                dot.classList.add("bg-violet-300");
+              }
+            });
+          };
+
+          const updateServicesArrows = (index) => {
+            // Navegação circular
+            servicesPrevButton.classList.remove("opacity-50");
+            servicesNextButton.classList.remove("opacity-50");
+            servicesPrevButton.disabled = false;
+            servicesNextButton.disabled = false;
+          };
+
+          servicesPrevButton.addEventListener("click", () => {
+            const prevIndex =
+              currentServicesIndex === 0
+                ? servicesSlides.length - 1
+                : currentServicesIndex - 1;
+            moveToServicesSlide(prevIndex);
+          });
+
+          servicesNextButton.addEventListener("click", () => {
+            const nextIndex =
+              (currentServicesIndex + 1) % servicesSlides.length;
+            moveToServicesSlide(nextIndex);
+          });
+
+          servicesDots.forEach((dot, index) => {
+            dot.addEventListener("click", () => moveToServicesSlide(index));
+          });
+
+          // Inicializar com o primeiro slide
+          moveToServicesSlide(0);
+
+          // Auto-play opcional (comentado por enquanto)
+          // setInterval(() => {
+          //   const nextIndex = (currentServicesIndex + 1) % servicesSlides.length;
+          //   moveToServicesSlide(nextIndex);
+          // }, 5000);
         }
       });
     </script>
